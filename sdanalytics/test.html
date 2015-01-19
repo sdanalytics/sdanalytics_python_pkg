@@ -1,0 +1,45 @@
+<!-- This row contains the html badge (left) and the summary block (right) -->
+<tr>
+    <td width="100" style="vertical-align: top; padding: 0 0 0 20px;"
+        valign="top">
+        <div style="font-family: Tahoma, Geneva, sans-serif; display: block; width: 80px; height: 80px; border-radius: 5px; color: #ffffff;
+    text-align: center; vertical-align: bottom; background-color: #383e4a; margin: 0; padding: 0;"
+             align="center">
+      <span style="font-size: 14px; font-weight: 400; display: block; padding: 10px 0 0 0; margin: 0;">
+        {{ icon_small_text }}
+      </span>
+      <span href=""
+            style="font-size: 42px; font-weight: 900; display: block; margin-top: 5px;">
+        {{ icon_large_text }}
+      </span>
+        </div>
+    </td>
+    <td style="padding: 0 20px 0 0">
+        <h4 style="font-family: Tahoma, Geneva, sans-serif; color: #0072f1; font-weight: bold; line-height: 1.2em; font-size: 18px; margin: 0 0 4px 0; padding: 0;">
+
+            <a href="{{ summary_link }}"
+               style="font-weight: bold; font-family: Tahoma, Geneva, sans-serif; color: #0072f1; text-decoration: none;">
+                {{ summary_title }}</a>
+        </h4>
+
+        <p style="font-family: Tahoma, Geneva, sans-serif; color: #000000; font-size: 14px; font-weight: 700; line-height: 1.6em; margin: 0 0 5px 0; padding: 0;">
+            {{ summary_subtitle }}
+        </p>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="2" style="padding: 10px 20px 50px 20px;">
+        <p style="font-family: Tahoma, Geneva, sans-serif; color: #000000; margin: 0; font-size: 14px; padding: 0; margin: 10px 0 10px 0; line-height: 1.6em;">
+            {{ description_text }}
+        </p>
+
+        <p style="font-family: Tahoma, Geneva, sans-serif; color: #000000; margin: 15px 0 0 0; font-size: 12px; padding: 0;">
+            {{ description_subtext }} |
+            <a href="{{ calendar_link }}" target="_blank"
+               style="font-family: Tahoma, Geneva, sans-serif; color: #0072f1; text-decoration: none; margin: 0; padding: 0;">
+                View in Calendar
+            </a>
+        </p>
+    </td>
+</tr>

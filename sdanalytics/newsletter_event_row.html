@@ -1,0 +1,54 @@
+<!--<style>-->
+    <!--.cal_badge {-->
+        <!--background-color: #219ab3;-->
+        <!--width: 80px;-->
+        <!--height: 80px;-->
+        <!--border-radius: 5px;-->
+        <!--text-align: center;-->
+        <!--vertical-align: bottom;-->
+        <!--margin: 0;-->
+        <!--padding: 0;-->
+    <!--}-->
+<!--</style>-->
+
+<!-- The span is only useful for lxml parsing -->
+<tbody>
+<!-- This row contains the html badge (left) and the summary block (right) -->
+<tr>
+    <td width="100" style="vertical-align: top; padding: 0 0 0 20px;"
+        valign="top">
+        <div class="cal_badge" style="display: block;" align="center">
+            <span style="display: block; padding: 10px 0 10px 0; font-size: 18px; font-weight: 400;">
+                {{ icon_small_text }}
+            </span>
+            <span style="display: block; margin-top: 5px; font-size: 42px; font-weight: 900;">
+                {{ icon_large_text }}
+            </span>
+        </div>
+    </td>
+    <td style="padding: 0 20px 0 0">
+        <h4 style="line-height: 1.2em; margin: 0 0 4px 0;">
+            <a href="{{ summary_link }}"> {{ summary_title }} </a>
+        </h4>
+
+        <p style="line-height: 1.6em; margin: 0 0 5px 0;">
+            {{ summary_subtitle }}
+        </p>
+    </td>
+</tr>
+
+<!-- This row contains the description and location and link -->
+<tr>
+    <td colspan="2" style="padding: 10px 20px 10px 20px;">
+        <p style="padding: 0; margin: 10px 0 10px 0; line-height: 1.6em;">
+            {{ description_text }}
+        </p>
+
+        <p style="margin: 15px 0 0 0; font-size: 12px;">
+            {{ description_subtext }} |
+            <a href="{{ calendar_link }}" target="_blank"> View in
+                Calendar </a>
+        </p>
+    </td>
+</tr>
+</tbody>
