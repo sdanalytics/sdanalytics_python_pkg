@@ -77,7 +77,8 @@ def events_to_html(events):
             icon_large_text = row['start'].day
 
         # Try to extract link from text. If none found, default to homepage:
-        html_link_match = re.search(r'https?://([\w./-]*)', row['description'])
+        url_regex = r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
+        html_link_match = re.search(url_regex, row['description'])
         if html_link_match:
             event_link = html_link_match.group()
         else:
